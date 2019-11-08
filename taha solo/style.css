@@ -266,11 +266,11 @@ select{
 	font-weight: lighter;
 }
 #secondDiv p{
-	color: #42ffec;
+	color:#52f6ff;
 	font-size: 30px;
-	width: 60%;
+	width: 45%;
 	position: relative;
-	top: 200px;
+	top: 100px;
 	left: 40px;
 	background-color: rgba(110, 110, 110, 0.4);
 }
