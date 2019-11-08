@@ -22,4 +22,8 @@ $(function(){
 	})
 
 
+	$("#booknow").click(function(){
+		$('#contract').slideToggle()
+	})
+
 })
