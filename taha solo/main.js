@@ -26,17 +26,24 @@ var maldive2=Hotel("Grand Park Kodhipparu","maldive","maldive/2.jpg","When you s
 var maldive3=Hotel("Anantara Dhigu Maldives Resort","maldive","maldive/3.jpg","Excellent hotel for solo travelers. Good for sightseeing with access to public transportation. Great room. Awesome vibe.")
 var maldive4=Hotel("Waldorf Astoria Maldives Ithaafushi ","maldive","maldive/4.jpg","Waldorf Astoria Maldives Ithaafushi is a luxury destination resort spanning across three islands, encircling a turquoise blue lagoon – home to spectacular underwater life. This new all-villa resort is a 30-minute yacht ride away from Velana International Airport.")
 
+//emirates
+var emirates1=Hotel("Queen Elizabeth 2 Hotel ","emirates","emirates/1.jpg","The world's most famous steamship, still the world's most famous Dubai destination, the Queen Elizabeth 2 is permanently moored in Mina Rashid Marina. The first floating hotel in the Middle East offers passengers a concentration of culinary and nightlife experiences, a state-of-the-art event center and an attractive historical site, a rare and fascinating reminder of maritime history..")
+var emirates2=Hotel("Signature 1 Hotel Tecom","emirates","emirates/2.jpg","Located in the heart of Barsha Heights, Signature 1 Hotel Tecom offers 4-star accommodation. It has a modern and casual design, all in simplicity, all in a welcoming setting.")
+var emirates3=Hotel("Al Seef Resort & Spa by Andalus","emirates","emirates/3.jpg","Al Seef Resort & Spa by Andalus has 4 outdoor pools surrounded by sun loungers and palm trees, and is located near the protected natural mangroves of Abu Dhabi. Free Wi-Fi is available in all areas.")
+var emirates4=Hotel("Rose Rayhaan by Rotana  ","emirates","emirates/4.jpg","The Rose Rayhaan by Rotana - Dubai is the third tallest hotel in the world with 333 meters of height and 72 floors. A benchmark for comfort and style in Dubai, it is located in a prime location on Sheikh Zayed Road, just steps from the Financial Center subway station and 3 minutes from the Dubai International Financial Center (DIFC).")
+
 
 var hotelsObj={
 	maldive:[maldive1,maldive2,maldive3,maldive4],
 	berlin:[berlin1,berlin2,berlin3,berlin4],
-	newYork:[newYork1,newYork2,newYork3,newYork4]
+	newYork:[newYork1,newYork2,newYork3,newYork4],
+	emirates:[emirates1,emirates2,emirates3,emirates4]
 }
 
 
 
 //to change background every 2.5 second;
-var arr = ["2.jpeg","4.jpeg","8.jpeg","3.jpeg","1.jpeg"];
+var arr = ["2.jpg","3.jpg","4.jpg","5.jpg"];
 $(function(){
 	var i = 0;
 setInterval(function() {
@@ -60,7 +67,8 @@ $("#click").click(function(){
 			$("#displayed").fadeIn();
 	 	 	$("#hotel"+k).css("background-image","url("+hotelsObj[key][j].image+")")
 			$("#hotelh"+k).html(hotelsObj[key][j].hotelName)
-			$("#hotel"+k+"p").html(hotelsObj[key][j].hotelDescription)
+			$("#hotel"+k+"p").html(hotelsObj[key][j].hotelDescription+"<br><a href='https://www.google.com/' target='_blank'><button style='width: 70px; height: 20px;'>click</button></a>")
+
 			 k++
 		}
 		}
