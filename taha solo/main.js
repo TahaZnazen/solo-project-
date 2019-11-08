@@ -57,7 +57,7 @@ setInterval(function() {
 
 //show the section on click
 $("#click").click(function(){
-	var input = $("input").val();
+	var input = $("select").val();
 	for(var key in hotelsObj){
 		var k=1;
 		for(var j = 0;j<hotelsObj[key].length;j++){
@@ -67,7 +67,7 @@ $("#click").click(function(){
 			$("#displayed").fadeIn();
 	 	 	$("#hotel"+k).css("background-image","url("+hotelsObj[key][j].image+")")
 			$("#hotelh"+k).html(hotelsObj[key][j].hotelName)
-			$("#hotel"+k+"p").html(hotelsObj[key][j].hotelDescription+"<br><a href='https://www.google.com/' target='_blank'><button style='width: 70px; height: 20px;'>click</button></a>")
+			$("#hotel"+k+"p").html(hotelsObj[key][j].hotelDescription+"<br><a href='grand hyat/hote1.html' target='_blank'><button style='width: 70px; height: 20px;'>click</button></a>")
 
 			 k++
 		}
