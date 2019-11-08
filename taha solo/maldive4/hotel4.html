@@ -14,30 +14,30 @@
  	</div>
  		<div id="shown">
  		<section id="contract">
- 			<input type="text" name="txt" placeholder="Name" required="first name selected">
- 			<input type="text" name="txt" placeholder="Second Name" required="second name required">
- 			<input type="text" name="txt" placeholder="+216 22 22 22" required="phone number required">
+ 			<input type="text" name="txt" placeholder="Name" id="name" require>
+ 			<input type="text" name="txt" placeholder="Second Name" id="secname" required>
+ 			<input type="text" name="txt" placeholder="+216 22 22 22" id ="phone" required>
  			
- 			<select>
-				<option value="room">1 Room</option>
-				<option value="room">2 Rooms</option>
-				<option value="room">3 Rooms</option>
-				<option value="room">4 Rooms</option>
+ 			<select id="room">
+				<option value="1 room">1 Room</option>
+				<option value="2 room">2 Rooms</option>
+				<option value="3 room">3 Rooms</option>
+				<option value="4 room">4 Rooms</option>
 			</select>
-			<select>
-				<option value="person">1 person</option>
-				<option value="person">2 person</option>
-				<option value="person">3 person</option>
-				<option value="person">4 person</option>
+			<select id="person">
+				<option value="1 person">1 person</option>
+				<option value="2 person">2 person</option>
+				<option value="3 person">3 person</option>
+				<option value="4 person">4 person</option>
 			</select>
-			<select>
-				<option value="class">first class</option>
-				<option value="class">second class</option>
-				<option value="class">third class</option>
-				<option value="class">VIP</option>
+			<select id="class">
+				<option value="first class">first class</option>
+				<option value="second class">second class</option>
+				<option value="third class">third class</option>
+				<option value="VIP">VIP</option>
 			</select>
-			<input type="date" name="date" required="please pick a date"><br>
-			<input type="time"  placeholder="H-M-AM/PM" id="time" required="choose time please"><br><br><br><br>
+			<input type="date" name="date" required id="date"><br>
+			<input type="time"  placeholder="H-M-AM/PM" id="time" required id="time"><br><br><br><br>
 			<button id="submit">SUBMIT</button>
  		</section>
  		</div>
@@ -60,7 +60,24 @@
 
 
 
+<div id="myModal" class="modal">
+	<button id="close2">X</button>
+	<center>
+  	<h1></h1>
+  	<h2></h2>
+  	<h3></h3>
+  	</center>
+  </div>
 
+</div>
+
+<div id="mysecModal" class="modal">
+	<button id="close1">X</button>
+	<h1></h1>
+
+
+ 
+</div>
 
 
 
